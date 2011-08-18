@@ -1,0 +1,65 @@
+You will need a mpq extractor to get the dbc files from the client for example:
+
+Ladik's MPQ Editor
+http://www.zezula.net/en/mpq/download.html
+
+Nice to have but not a must is a DBC tool which can show the content of the dbc files, this will help you to find the information,
+you need.
+
+I not gonna write for now a tutorial how to use such tools there should be enough of them to find one easy with google.
+
+This works only with MySql.
+
+Attention:
+I wrote this long time back for one of my projects, it was very specific written for it and I currently rewrite this for a more
+general use, its still work in progress.
+While I wrote this with allowing to parse for strings several languages at once this dont work currently.
+Best is to leave everything to "en" even you gonna parse a different languages, just put those files into the "en" folder.
+Also it seems some dbc files were changed and cant be parsed.
+
+
+How to use:
+
+Open the config.php and set the needed variables and create the database(s)
+
+Next you need to put the dbc files you wanna parse into the subdirectoy "dbc\en".
+
+Now you can start the script from a commandline with php index.php
+
+Choose now option 1 to generate raw structures, these will be placed in the sub directory "raw_struct"
+
+In that file is now for every column in the dbc file "$this->GetUnknown()", because there is not meta saying what column hold which data,
+the unknown means the raw data is parsed.
+
+You can specifiy now different types based on what kind of data it is (to figure that a dbc tool is really helpfull), you have the choice between:
+GetInt(fieldname)
+GetUInt(fieldname) 
+GetFloat(fieldname) 
+GetString(fieldname,lang)
+
+Attention: As for now lang should be ALWAYS "en"
+
+Those values are a must, optional as last paramater you can add "primary" to set the field as a primary key, you can set more than one
+as a primary then a composite primary key will be created.
+
+If you are done setting up the files, copy all the files from "raw_struct" to "final_struct"
+
+Now press 2 to generate the final structure, the script will exit and you need to restart it
+
+Press 3 and all the dbc files will parsed and put into the database you specified, its not needed to create any tables that is done automatic.
+
+
+Example:
+I left a little example in how those structures could look for the ItemSubclass db, to use it just goto
+
+"dbc\en" rename "ItemSubClass.dbc.sample" to "ItemSubClass.dbc"
+"raw_structs" rename "ItemSubClass.dbc.sample" to "ItemSubClass.dbc"
+
+Generate a final struct from script and parse dbc data.
+
+
+
+
+
+
+

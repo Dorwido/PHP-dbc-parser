@@ -1,0 +1,18 @@
+	function ItemSubClass(){
+		$returndata = array (
+			$this->GetUnknown(),
+			$this->GetInt('itemclassid','primary'),
+			$this->GetInt('subclassid','primary'),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetString('shorttext','en'),
+			$this->GetString('longtext','en')
+		);
+		return $returndata;
+	}
