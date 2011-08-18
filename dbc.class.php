@@ -214,6 +214,12 @@ class dbcstructs{
 		if($this->currentheader[$lang]['fileformat']!="WDBC"){
 			die("Fileformat not WDBC in file: ".$this->currentfile);
 		}
+		//somehow the fields are only 23 in the file header which produces problems
+		if($this->currentfile=='Achievement_Criteria.dbc'){
+			$this->currentheader[$lang]['fields'] = 24;
+		}
+		
+	
 		if($this->currentheader[$lang]['recordsize'] % $this->currentheader[$lang]['fields'] <> 0){
 			die("Fieldlength is not 4, file: ".$this->currentfile);
 		}

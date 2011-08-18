@@ -11,6 +11,34 @@ class dbcstructs{
 		}else{
 			die("No definition found for ".$struct."\r\n");
 		}
+	}	function Achievement_Criteria(){
+		$returndata = array (
+			$this->GetInt('criteriaid','primary'),
+			$this->GetInt('achievementid'),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetString('criterianame','en'),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown()
+		);
+		return $returndata;
 	}	function Faction(){
 		$returndata = array (
 			$this->GetInt('FactionId','primary'),

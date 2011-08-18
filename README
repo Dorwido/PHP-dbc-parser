@@ -19,9 +19,9 @@ Also it seems some dbc files were changed and cant be parsed.
 
 
 If you dont want to have the work to build structures yourself then you can just use Parse DBC data after setting up the config,
-it includes ready to use structures for faction,itemclass,itemsubclass,skilline.
+it includes ready to use structures for faction,itemclass,itemsubclass,skilline,achievement_criteria.
 
-This allows to lookup the names for: minFactionId, itemClass, itemSubClass, requiredSkill
+This allows to lookup the names for: minFactionId, itemClass, itemSubClass, requiredSkill, achievement_criteria names and for which achievement they are.
 
 
 How to use:
