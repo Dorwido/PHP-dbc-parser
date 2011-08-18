@@ -26,7 +26,7 @@ This allows to lookup the names for: minFactionId, itemClass, itemSubClass, requ
 
 How to use:
 
-Open the config.php and set the needed variables and create the database(s)
+Open the config.php.sample and set the needed variables, save it as config.php and create the database(s)
 
 Next you need to put the dbc files you wanna parse into the subdirectoy "dbc\en".
 
