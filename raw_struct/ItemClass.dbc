@@ -1,0 +1,10 @@
+	function ItemClass(){
+		$returndata = array (
+			$this->GetUnknown(),
+			$this->GetInt('itemClass','primary'),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetString('itemClassName','en'),
+		);
+		return $returndata;
+	}

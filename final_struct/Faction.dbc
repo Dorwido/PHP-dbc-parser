@@ -1,0 +1,31 @@
+	function Faction(){
+		$returndata = array (
+			$this->GetInt('FactionId','primary'),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetString('FactionName','en'),
+			$this->GetUnknown(),
+			$this->GetUnknown()
+		);
+		return $returndata;
+	}

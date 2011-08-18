@@ -1,0 +1,12 @@
+	function SkillLine(){
+		$returndata = array (
+			$this->GetInt('SkillId','primary'),
+			$this->GetUnknown(),
+			$this->GetString('SkillName','en'),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown(),
+			$this->GetUnknown()
+		);
+		return $returndata;
+	}
