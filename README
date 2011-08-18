@@ -18,6 +18,12 @@ Best is to leave everything to "en" even you gonna parse a different languages, 
 Also it seems some dbc files were changed and cant be parsed.
 
 
+If you dont want to have the work to build structures yourself then you can just use Parse DBC data after setting up the config,
+it includes ready to use structures for faction,itemclass,itemsubclass,skilline.
+
+This allows to lookup the names for: minFactionId, itemClass, itemSubClass, requiredSkill
+
+
 How to use:
 
 Open the config.php and set the needed variables and create the database(s)
